@@ -1,0 +1,16 @@
+.product-about{
+  &__title{
+    font-size: 2rem;
+    color: $gray-700;
+  }
+  &__line{
+    margin-top: 0;
+    border-top: 2px solid $orange;
+  }
+  &__text{
+    font-size: 1.2rem;
+  }
+  .bg-orange{
+    background-color: $orange;
+  }
+}

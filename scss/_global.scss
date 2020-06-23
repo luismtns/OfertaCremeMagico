@@ -1,0 +1,25 @@
+body {
+  @include body-font;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @include body-font;
+  font-weight: 900;
+  &.orange{
+    color: $orange;
+  }
+  &.white{
+    color: $white;
+  }
+}
+
+.shadow-box{
+  box-shadow: rgba(0,0,0,0.18) 0 5px 20px;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}

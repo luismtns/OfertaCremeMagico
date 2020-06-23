@@ -1,0 +1,23 @@
+.pricebox{
+  p{
+    &.old-price{
+      text-decoration: line-through;
+      font-size: 1rem;
+    }
+    &.sub-text{
+      color: $gray-600;
+      font-weight: bold;
+    }
+    &.frete-text{
+      em{
+        color: $orange;
+        font-size: 1.4rem;
+        margin-right: 0.5rem;
+      }
+      font-weight: bold;
+    }
+  }
+  h1.new-price{
+    font-size: 4.5rem;
+  }
+}
