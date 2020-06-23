@@ -1,0 +1,17 @@
+.footer{
+    background-color: #191919;
+    margin-top: 2rem;
+    padding: 2rem 0 3rem;
+    color: $white;
+    .copyright{
+        color: #999!important;
+    }
+    .credit-cards-container{
+        padding-right: 1rem;
+        border-right: 1px solid $white;
+        img{
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.assurance{
+  &__text{
+    font-size: 1.5rem;
+    @include respond-to($medium){ 
+      font-size: 1rem;
+    }
+  }
+}

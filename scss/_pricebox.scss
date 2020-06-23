@@ -1,4 +1,9 @@
 .pricebox{
+  h1{
+    @include respond-to($medium){ 
+      font-size: 1.5rem;
+    }
+  }
   p{
     &.old-price{
       text-decoration: line-through;

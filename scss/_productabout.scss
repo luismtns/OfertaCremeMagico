@@ -1,7 +1,23 @@
 .product-about{
+  h1{
+    @include respond-to($medium){ 
+      font-size: 1.5rem;
+    }
+  }
   &__title{
     font-size: 2rem;
     color: $gray-700;
+    
+    @include respond-to($medium){ 
+      font-size: 1.5rem;
+    }
+  }
+  &__subtitle{
+    font-size: 1.5rem;
+    color: $gray-700;
+    @include respond-to($medium){ 
+      font-size: 1.2em;
+    }
   }
   &__line{
     margin-top: 0;
@@ -9,8 +25,14 @@
   }
   &__text{
     font-size: 1.2rem;
+    @include respond-to($medium){ 
+      font-size: 1rem;
+    }
   }
   .bg-orange{
     background-color: $orange;
+  }
+  .bg-orange-light{
+    background-color: $orange_light;
   }
 }
