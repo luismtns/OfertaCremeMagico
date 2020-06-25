@@ -14,9 +14,9 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black: #000 !default;
 
-$orange_dark: #FF631D !default;
+$orange_dark: #be501d !default;
 $orange: #FF631D !default;
-$orange_light: #F1E1DB !default;
+$orange_light: #fd875c !default;
 
 $primary: $orange !default;
 $secondary: $orange_light !default;
@@ -32,23 +32,34 @@ $dark: $gray-800 !default;
   box-shadow: none;
 }
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle {
-  color: $primary;
-  background-color: transparent;
+  color: $white;
+  background-color: $orange_light;
   border-color: $primary;
 }
 .btn-primary.focus, .btn-primary:focus {
-  color: $primary;
-  background-color: transparent;
+  color: $white;
+  background-color: $orange_light;
   border-color: $primary;
   box-shadow: none;
 }
 .btn-primary:hover {
-  color: $primary;
-  background-color: transparent;
+  color: $white;
+  background-color: $orange_light;
   border-color: $primary;
 }
 .btn-primary {
   color: #fff;
   background-color: $primary;
   border-color: $primary;
+}
+
+a {
+  color: $gray-100;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+  &:hover {
+    color: $gray-500;
+    text-decoration: underline;
+  }
 }

@@ -6,12 +6,16 @@
     .copyright{
         color: #999!important;
     }
+    a.link{
+        display: block;
+        margin-bottom: 0.4rem;
+    }
     .credit-cards-container{
         padding-right: 1rem;
         border-right: 1px solid $white;
         img{
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
+            margin-right: 0.325rem;
+            margin-bottom: 0.325rem;
         }
     }
 }

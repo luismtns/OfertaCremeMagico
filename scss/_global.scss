@@ -1,5 +1,8 @@
 body {
   @include body-font;
+  @include respond-to($medium){
+    overflow-x: hidden;
+  }
 }
 
 h1,

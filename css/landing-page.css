@@ -9,21 +9,21 @@
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
-  color: #FF631D;
-  background-color: transparent;
+  color: #fff;
+  background-color: #fd875c;
   border-color: #FF631D;
 }
 
 .btn-primary.focus, .btn-primary:focus {
-  color: #FF631D;
-  background-color: transparent;
+  color: #fff;
+  background-color: #fd875c;
   border-color: #FF631D;
   box-shadow: none;
 }
 
 .btn-primary:hover {
-  color: #FF631D;
-  background-color: transparent;
+  color: #fff;
+  background-color: #fd875c;
   border-color: #FF631D;
 }
 
@@ -33,8 +33,26 @@
   border-color: #FF631D;
 }
 
+a {
+  color: #f8f9fa;
+  text-decoration: none;
+  background-color: transparent;
+  outline: none;
+}
+
+a:hover {
+  color: #adb5bd;
+  text-decoration: underline;
+}
+
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
 }
 
 h1,
@@ -75,6 +93,47 @@ h6.white {
 
 .shadow-box__card-text {
   padding: 1rem;
+}
+
+@-webkit-keyframes btn_pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.25);
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 0 0 6rem 0rem rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.25);
+  }
+}
+
+@keyframes btn_pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.25);
+  }
+  50% {
+    transform: scale(1.2);
+    box-shadow: 0 0 6rem 0rem rgba(0, 0, 0, 0.25);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 2rem 0.5rem rgba(0, 0, 0, 0.25);
+  }
+}
+
+.pulse_animation_btn {
+  will-change: "auto";
+  -webkit-animation-name: btn_pulse;
+  animation-name: btn_pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  box-shadow: 0 0 1rem 0.5rem rgba(0, 0, 0, 0.25);
 }
 
 header.masthead .semi-circle {
@@ -185,7 +244,11 @@ header.masthead .semi-circle {
 }
 
 .product-about .bg-orange-light {
-  background-color: #F1E1DB;
+  background-color: #fd875c;
+}
+
+.product-about .bg-gray {
+  background-color: #e9ecef;
 }
 
 .assurance__text {
@@ -209,12 +272,17 @@ header.masthead .semi-circle {
   color: #999 !important;
 }
 
+.footer a.link {
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
 .footer .credit-cards-container {
   padding-right: 1rem;
   border-right: 1px solid #fff;
 }
 
 .footer .credit-cards-container img {
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
+  margin-right: 0.325rem;
+  margin-bottom: 0.325rem;
 }
